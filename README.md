@@ -1,7 +1,7 @@
-## Digitalocean + grsecurity
+## DigitalOcean + grsecurity
 
 This repo aims to document a well-working minimal Linux kernel + grsecurity
-config that works on Digitalocean VMs. Digitalocean allows you to deploy your
+config that works on DigitalOcean VMs. DigitalOcean allows you to deploy your
 own kernel using grub for certain newer VM types (Ubuntu 15.04 Vivid, Debian
 8). You can use this kernel config to get started compiling your own kernel
 from scratch, without a lot of unwanted modules that take a lot of time to
@@ -12,7 +12,7 @@ patches.
 
 ## Current features
 
-- Works fine on Digitalocean with Ubuntu 15.04
+- Works fine on DigitalOcean with Ubuntu 15.04
 - Works with Docker (storage backend: Overlay FS)
 - No modules
 - Small kernel config (fast recompile + deploy)
