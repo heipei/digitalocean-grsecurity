@@ -17,6 +17,16 @@ patches.
 - No modules
 - Small kernel config (fast recompile + deploy)
 
+## Docker instructions
+When building a kernel, you can use this script to make sure you have the
+necessary options enabled in your kernel config:
+[check-config.sh](https://github.com/docker/docker/blob/master/contrib/check-config.sh)
+
+You also have to change the storage driver in `/etc/default/docker` like this:
+```
+DOCKER_OPTS="--storage-driver=overlay"
+```
+
 ## TODO
 
 - The "general" section could use some manual review.
